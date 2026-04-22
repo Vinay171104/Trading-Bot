@@ -1,0 +1,65 @@
+2026-04-23 00:21:26 | ERROR    | cli | Input validation error: Price is required for LIMIT orders.
+2026-04-23 00:21:31 | ERROR    | cli | Input validation error: Stop price (--stop-price) is required for STOP_LIMIT orders.
+2026-04-23 00:21:37 | ERROR    | cli | Input validation error: Quantity must be greater than 0, got -5.0.
+2026-04-23 00:21:42 | ERROR    | cli | BINANCE_API_KEY and BINANCE_API_SECRET must be set.
+2026-04-23 00:27:35 | INFO     | cli | Bot started | symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None stop=None
+2026-04-23 00:27:35 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 00:27:36 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.001 price=MARKET stop=N/A
+2026-04-23 00:27:36 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1776884256554, 'recvWindow': 5000}
+2026-04-23 00:27:36 | ERROR    | bot.client | Binance API error -2015: Invalid API-key, IP, or permissions for action
+2026-04-23 00:27:36 | ERROR    | bot.orders | Order placement failed: Binance API error -2015: Invalid API-key, IP, or permissions for action
+2026-04-23 00:33:04 | INFO     | cli | Bot started | symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None stop=None
+2026-04-23 00:33:04 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 00:33:04 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.001 price=MARKET stop=N/A
+2026-04-23 00:33:04 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1776884584940, 'recvWindow': 5000}
+2026-04-23 00:33:05 | DEBUG    | bot.client | Order response: {'orderId': 13062529319, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'yjcAnMjlQC3QnUbeP4ViTc', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776884584893}
+2026-04-23 00:33:05 | INFO     | bot.orders | Order SUCCESS | orderId=13062529319 status=NEW executedQty=0.0000
+2026-04-23 00:33:16 | INFO     | cli | Bot started | symbol=BTCUSDT side=SELL type=LIMIT qty=0.001 price=100000.0 stop=None
+2026-04-23 00:33:16 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 00:33:16 | INFO     | bot.client | Placing SELL LIMIT order | symbol=BTCUSDT qty=0.001 price=100000.0 stop=N/A
+2026-04-23 00:33:16 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 100000.0, 'timeInForce': 'GTC', 'timestamp': 1776884596909, 'recvWindow': 5000}
+2026-04-23 00:33:17 | DEBUG    | bot.client | Order response: {'orderId': 13062529793, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': '3UeNvLMwPmTQQ0qUb0zII5', 'price': '100000.00', 'avgPrice': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776884596865}
+2026-04-23 00:33:17 | INFO     | bot.orders | Order SUCCESS | orderId=13062529793 status=NEW executedQty=0.0000
+2026-04-23 00:33:31 | INFO     | cli | Bot started | symbol=BTCUSDT side=SELL type=STOP qty=0.001 price=80000.0 stop=82000.0
+2026-04-23 00:33:31 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 00:33:32 | INFO     | bot.client | Placing SELL STOP order | symbol=BTCUSDT qty=0.001 price=80000.0 stop=82000.0
+2026-04-23 00:33:32 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.001, 'price': 80000.0, 'stopPrice': 82000.0, 'timeInForce': 'GTC', 'timestamp': 1776884612038, 'recvWindow': 5000}
+2026-04-23 00:33:32 | ERROR    | bot.client | Binance API error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-23 00:33:32 | ERROR    | bot.orders | Order placement failed: Binance API error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-23 00:33:57 | INFO     | cli | Bot started | symbol=BTCUSDT side=SELL type=STOP qty=0.001 price=80000.0 stop=82000.0
+2026-04-23 00:33:57 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 00:33:57 | INFO     | bot.client | Placing SELL STOP order | symbol=BTCUSDT qty=0.001 price=80000.0 stop=82000.0
+2026-04-23 00:33:57 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order/algo params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.001, 'price': 80000.0, 'stopPrice': 82000.0, 'timeInForce': 'GTC', 'timestamp': 1776884637838, 'recvWindow': 5000}
+2026-04-23 00:33:57 | ERROR    | bot.client | Binance API error -5000: Path /fapi/v1/order/algo, Method POST is invalid
+2026-04-23 00:33:57 | ERROR    | bot.orders | Order placement failed: Binance API error -5000: Path /fapi/v1/order/algo, Method POST is invalid
+2026-04-23 00:41:26 | INFO     | cli | Bot started | symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None stop=None
+2026-04-23 00:41:26 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 00:41:27 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.001 price=MARKET stop=N/A
+2026-04-23 00:41:27 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1776885087047, 'recvWindow': 5000}
+2026-04-23 00:41:27 | DEBUG    | bot.client | Order response: {'orderId': 13062551171, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'OHwCnyILDVGgUGxh2Zp4iN', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776885086996}
+2026-04-23 00:41:27 | INFO     | bot.orders | Order SUCCESS | orderId=13062551171 status=NEW executedQty=0.0000
+2026-04-23 00:41:27 | INFO     | cli | Bot started | symbol=BTCUSDT side=SELL type=LIMIT qty=0.001 price=100000.0 stop=None
+2026-04-23 00:41:27 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 00:41:28 | INFO     | bot.client | Placing SELL LIMIT order | symbol=BTCUSDT qty=0.001 price=100000.0 stop=N/A
+2026-04-23 00:41:28 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 100000.0, 'timeInForce': 'GTC', 'timestamp': 1776885088131, 'recvWindow': 5000}
+2026-04-23 00:41:28 | DEBUG    | bot.client | Order response: {'orderId': 13062551231, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'Fd8pW29ZfClwvDnYGDwOgW', 'price': '100000.00', 'avgPrice': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776885088080}
+2026-04-23 00:41:28 | INFO     | bot.orders | Order SUCCESS | orderId=13062551231 status=NEW executedQty=0.0000
+2026-04-23 00:59:35 | ERROR    | cli | BINANCE_API_KEY and BINANCE_API_SECRET must be set.
+2026-04-23 01:00:01 | INFO     | cli | Bot started | symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop=None
+2026-04-23 01:00:01 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 01:00:02 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.01 price=MARKET stop=N/A
+2026-04-23 01:00:02 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1776886202039, 'recvWindow': 5000}
+2026-04-23 01:00:02 | DEBUG    | bot.client | Order response: {'orderId': 13062596279, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'iA035z1BUdvscQFgWaLuTh', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776886201976}
+2026-04-23 01:00:02 | INFO     | bot.orders | Order SUCCESS | orderId=13062596279 status=NEW executedQty=0.0000
+2026-04-23 01:08:46 | INFO     | cli | Bot started | symbol=BTCUSDT side=BUY type=MARKET qty=0.01 price=None stop=None
+2026-04-23 01:08:46 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 01:08:46 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.01 price=MARKET stop=N/A
+2026-04-23 01:08:46 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1776886726819, 'recvWindow': 5000}
+2026-04-23 01:08:46 | DEBUG    | bot.client | Order response: {'orderId': 13062617397, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'Gi8ZkNcPNtdMsUaMbrXnmc', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776886726752}
+2026-04-23 01:08:46 | INFO     | bot.orders | Order SUCCESS | orderId=13062617397 status=NEW executedQty=0.0000
+2026-04-23 01:08:47 | INFO     | cli | Bot started | symbol=BTCUSDT side=SELL type=LIMIT qty=0.01 price=100000.0 stop=None
+2026-04-23 01:08:47 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 01:08:47 | INFO     | bot.client | Placing SELL LIMIT order | symbol=BTCUSDT qty=0.01 price=100000.0 stop=N/A
+2026-04-23 01:08:47 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 100000.0, 'timeInForce': 'GTC', 'timestamp': 1776886727866, 'recvWindow': 5000}
+2026-04-23 01:08:48 | DEBUG    | bot.client | Order response: {'orderId': 13062617442, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'OEDXZZyb26xWu3itb7MXZQ', 'price': '100000.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776886727810}
+2026-04-23 01:08:48 | INFO     | bot.orders | Order SUCCESS | orderId=13062617442 status=NEW executedQty=0.0000
