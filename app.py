@@ -101,13 +101,16 @@ with st.sidebar:
         type="password",
         placeholder="Paste your API key here",
         help="From Binance Demo Futures API Management",
-    )
+    ).strip()  # strip whitespace to prevent -1022 signature errors
     api_secret = st.text_input(
         "Binance API Secret",
         value=os.environ.get("BINANCE_API_SECRET", ""),
         type="password",
         placeholder="Paste your secret key here",
-    )
+    ).strip()  # strip whitespace to prevent -1022 signature errors
+
+    if api_key and api_secret:
+        st.caption("✅ Keys loaded — whitespace auto-trimmed.")
 
     st.markdown("---")
     st.markdown("**Base Endpoint**")
@@ -163,7 +166,7 @@ with tab_place:
     col1, col2 = st.columns(2)
 
     with col1:
-        symbol = st.text_input("Symbol", value="BTCUSDT", placeholder="e.g. BTCUSDT, ETHUSDT").upper()
+        symbol = st.text_input("Symbol", value="BTCUSDT", placeholder="e.g. BTCUSDT, ETHUSDT").strip().upper()
         side = st.selectbox("Side", ["BUY", "SELL"])
         order_type = st.selectbox("Order Type", ["MARKET", "LIMIT", "STOP_LIMIT"])
         quantity = st.number_input("Quantity", min_value=0.0001, value=0.01, step=0.001, format="%.4f")
@@ -244,7 +247,8 @@ with tab_place:
                 sys.path.insert(0, os.path.dirname(__file__))
                 from bot.client import BinanceFuturesClient, BinanceClientError
 
-                client = BinanceFuturesClient(api_key=api_key, api_secret=api_secret)
+                # Keys are already stripped at input time, but strip again for safety
+                client = BinanceFuturesClient(api_key=api_key.strip(), api_secret=api_secret.strip())
                 response = client.place_order(
                     symbol=symbol,
                     side=side,
