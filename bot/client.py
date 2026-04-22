@@ -48,7 +48,7 @@ class BinanceFuturesClient:
         params = params or {}
         if signed:
             params["timestamp"] = int(time.time() * 1000)
-            params["recvWindow"] = 5000
+            params["recvWindow"] = 10000
             params = self._sign(params)
 
         url = BASE_URL + path
@@ -64,7 +64,7 @@ class BinanceFuturesClient:
 
     def _post(self, path: str, params: Dict[str, Any]) -> Any:
         params["timestamp"] = int(time.time() * 1000)
-        params["recvWindow"] = 5000
+        params["recvWindow"] = 10000
         params = self._sign(params)
 
         url = BASE_URL + path
@@ -140,17 +140,22 @@ class BinanceFuturesClient:
         Returns:
             dict: Binance API order response.
         """
+        # Format numeric values as clean strings to avoid float precision issues
+        # (e.g. Streamlit can produce 0.017000000000000005 which corrupts HMAC)
+        def _fmt(v: float) -> str:
+            return f"{v:.8f}".rstrip("0").rstrip(".")
+
         params: Dict[str, Any] = {
             "symbol": symbol,
             "side": side,
             "type": order_type,
-            "quantity": quantity,
+            "quantity": _fmt(quantity),
         }
 
         if order_type == "LIMIT":
             if price is None:
                 raise ValueError("Price must be provided for LIMIT orders.")
-            params["price"] = price
+            params["price"] = _fmt(price)
             params["timeInForce"] = time_in_force
 
         if order_type == "STOP":
@@ -158,8 +163,8 @@ class BinanceFuturesClient:
                 raise ValueError("Price must be provided for STOP (Stop-Limit) orders.")
             if stop_price is None:
                 raise ValueError("Stop price must be provided for STOP (Stop-Limit) orders.")
-            params["price"] = price
-            params["stopPrice"] = stop_price
+            params["price"] = _fmt(price)
+            params["stopPrice"] = _fmt(stop_price)
             params["timeInForce"] = time_in_force
 
         logger.info(
@@ -167,7 +172,7 @@ class BinanceFuturesClient:
             side,
             order_type,
             symbol,
-            quantity,
+            params["quantity"],
             price or "MARKET",
             stop_price or "N/A",
         )

@@ -5,6 +5,14 @@ Run with: streamlit run app.py
 
 import os
 import sys
+
+# ── Ensure the project root is on the path so bot package is always found ─────
+_PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+if _PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, _PROJECT_ROOT)
+
+from bot.client import BinanceFuturesClient, BinanceClientError  # noqa: E402
+
 import streamlit as st
 
 # ── Page config ──────────────────────────────────────────────────────────────
@@ -244,11 +252,8 @@ with tab_place:
 
         with st.spinner("Placing order on Binance Demo..."):
             try:
-                sys.path.insert(0, os.path.dirname(__file__))
-                from bot.client import BinanceFuturesClient, BinanceClientError
-
-                # Keys are already stripped at input time, but strip again for safety
-                client = BinanceFuturesClient(api_key=api_key.strip(), api_secret=api_secret.strip())
+                # Keys are already stripped at input time
+                client = BinanceFuturesClient(api_key=api_key, api_secret=api_secret)
                 response = client.place_order(
                     symbol=symbol,
                     side=side,
