@@ -5,6 +5,7 @@ Run with: streamlit run app.py
 
 import os
 import sys
+import re
 
 # ── Ensure the project root is on the path so bot package is always found ─────
 _PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -103,22 +104,56 @@ with st.sidebar:
     st.markdown("### ⚙️ Configuration")
     st.markdown("---")
 
-    api_key = st.text_input(
-        "Binance API Key",
-        value=os.environ.get("BINANCE_API_KEY", ""),
-        type="password",
-        placeholder="Paste your API key here",
-        help="From Binance Demo Futures API Management",
-    ).strip()  # strip whitespace to prevent -1022 signature errors
-    api_secret = st.text_input(
-        "Binance API Secret",
-        value=os.environ.get("BINANCE_API_SECRET", ""),
-        type="password",
-        placeholder="Paste your secret key here",
-    ).strip()  # strip whitespace to prevent -1022 signature errors
+    # Initialize session state for credentials
+    if "api_key" not in st.session_state:
+        st.session_state["api_key"] = os.environ.get("BINANCE_API_KEY", "")
+    if "api_secret" not in st.session_state:
+        st.session_state["api_secret"] = os.environ.get("BINANCE_API_SECRET", "")
+    if "is_connected" not in st.session_state:
+        st.session_state["is_connected"] = bool(st.session_state["api_key"] and st.session_state["api_secret"])
 
-    if api_key and api_secret:
-        st.caption("✅ Keys loaded — whitespace auto-trimmed.")
+    if not st.session_state["is_connected"]:
+        # Show inputs if not connected
+        temp_api_key = st.text_input(
+            "Binance API Key",
+            value=st.session_state["api_key"],
+            type="password",
+            placeholder="Paste your API key here",
+            help="From Binance Demo Futures API Management",
+        )
+        temp_api_secret = st.text_input(
+            "Binance API Secret",
+            value=st.session_state["api_secret"],
+            type="password",
+            placeholder="Paste your secret key here",
+        )
+
+        if st.button("🔗 Connect", type="primary", use_container_width=True):
+            if temp_api_key and temp_api_secret:
+                # Aggressively clean keys to remove zero-width spaces or hidden chars
+                clean_key = re.sub(r'[^\x20-\x7E]', '', temp_api_key).strip()
+                clean_secret = re.sub(r'[^\x20-\x7E]', '', temp_api_secret).strip()
+                
+                st.session_state["api_key"] = clean_key
+                st.session_state["api_secret"] = clean_secret
+                st.session_state["is_connected"] = True
+                st.rerun()
+            else:
+                st.error("Please provide both keys.")
+    else:
+        # Show connected state
+        st.success("✅ Connected to Binance API")
+        st.caption("Keys are safely stored in your session.")
+        
+        if st.button("🔌 Disconnect", use_container_width=True):
+            st.session_state["api_key"] = ""
+            st.session_state["api_secret"] = ""
+            st.session_state["is_connected"] = False
+            st.rerun()
+
+    # Load into variables for the rest of the script
+    api_key = st.session_state["api_key"]
+    api_secret = st.session_state["api_secret"]
 
     st.markdown("---")
     st.markdown("**Base Endpoint**")
