@@ -163,7 +163,7 @@ Logs are written to `logs/trading_bot_YYYYMMDD.log`.
 ### Stop-Limit Orders
 The bot supports **Stop-Limit** orders (Binance API type `STOP`). This requires both a `--price` (the limit price for the order) and a `--stop-price` (the trigger price that activates the order). Useful for setting stop-loss or conditional entry points.
 
-> **⚠️ Testnet/Demo Limitation:** The Binance Futures demo environment requires Stop-Limit orders to be placed via the Algo Order API (`/fapi/v1/order/algo`), which is **not available** on the demo or testnet environments. The STOP_LIMIT code is fully implemented and correct for the live Binance Futures API. On testnet/demo, the command will return a `-4120` error — this is an environment restriction, not a code bug.
+> **Testnet/Demo Limitation:** The Binance Futures demo environment requires Stop-Limit orders to be placed via the Algo Order API (`/fapi/v1/order/algo`), which is **not available** on the demo or testnet environments. The STOP_LIMIT code is fully implemented and correct for the live Binance Futures API. On testnet/demo, the command will return a `-4120` error — this is an environment restriction, not a code bug.
 
 ### Enhanced CLI UX
 The CLI uses the [`rich`](https://github.com/Textualize/rich) library for:
