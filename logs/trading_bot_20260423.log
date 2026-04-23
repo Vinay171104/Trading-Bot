@@ -75,3 +75,187 @@
 2026-04-23 01:20:39 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.01 price=MARKET stop=N/A
 2026-04-23 01:20:39 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1776887439501, 'recvWindow': 5000}
 2026-04-23 01:20:40 | DEBUG    | bot.client | Order response: {'orderId': 13062647316, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'MOtzRoz2omC4bpOw7GVFp7', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776887439844}
+2026-04-23 01:24:23 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.019 price=MARKET stop=N/A
+2026-04-23 01:24:23 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.019', 'timestamp': 1776887663634, 'recvWindow': 10000}
+2026-04-23 01:24:24 | ERROR    | bot.client | Binance API error -1022: Signature for this request is not valid.
+2026-04-23 01:26:46 | INFO     | cli | Bot started | symbol=BTCUSDT side=BUY type=MARKET qty=1.19 price=None stop=None
+2026-04-23 01:26:46 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 01:26:46 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=1.19 price=MARKET stop=N/A
+2026-04-23 01:26:46 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '1.19', 'timestamp': 1776887806745, 'recvWindow': 10000}
+2026-04-23 01:26:46 | DEBUG    | bot.client | Order response: {'orderId': 13062662683, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'XxwtgQ9Lwd0kgSHPitnEse', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '1.1900', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776887806667}
+2026-04-23 01:26:46 | INFO     | bot.orders | Order SUCCESS | orderId=13062662683 status=NEW executedQty=0.0000
+2026-04-23 01:27:39 | INFO     | cli | Bot started | symbol=BTCUSDT side=BUY type=MARKET qty=0.019 price=None stop=None
+2026-04-23 01:27:39 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 01:27:40 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.019 price=MARKET stop=N/A
+2026-04-23 01:27:40 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.019', 'timestamp': 1776887860292, 'recvWindow': 10000}
+2026-04-23 01:27:40 | DEBUG    | bot.client | Order response: {'orderId': 13062664942, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'defB4aUhH78q4CYzST53dz', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0190', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776887860217}
+2026-04-23 01:27:40 | INFO     | bot.orders | Order SUCCESS | orderId=13062664942 status=NEW executedQty=0.0000
+2026-04-23 01:31:33 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.123 price=MARKET stop=N/A
+2026-04-23 01:31:33 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.123', 'timestamp': 1776888093979, 'recvWindow': 10000}
+2026-04-23 01:31:34 | ERROR    | bot.client | Binance API error -1022: Signature for this request is not valid.
+2026-04-23 01:32:15 | INFO     | cli | Bot started | symbol=BTCUSDT side=BUY type=MARKET qty=0.123 price=None stop=None
+2026-04-23 01:32:15 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 01:32:16 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.123 price=MARKET stop=N/A
+2026-04-23 01:32:16 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.123', 'timestamp': 1776888136291, 'recvWindow': 10000}
+2026-04-23 01:32:16 | ERROR    | bot.client | Binance API error -2019: Margin is insufficient.
+2026-04-23 01:32:16 | ERROR    | bot.orders | Order placement failed: Binance API error -2019: Margin is insufficient.
+2026-04-23 01:33:27 | INFO     | cli | Bot started | symbol=BTCUSDT side=BUY type=MARKET qty=0.005 price=None stop=None
+2026-04-23 01:33:27 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 01:33:28 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.005 price=MARKET stop=N/A
+2026-04-23 01:33:28 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.005', 'timestamp': 1776888208146, 'recvWindow': 10000}
+2026-04-23 01:33:28 | DEBUG    | bot.client | Order response: {'orderId': 13062679197, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'CfzbKUbsXsyvBa3VLwJINr', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0050', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776888208068}
+2026-04-23 01:33:28 | INFO     | bot.orders | Order SUCCESS | orderId=13062679197 status=NEW executedQty=0.0000
+2026-04-23 01:36:15 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.005 price=MARKET stop=N/A
+2026-04-23 01:36:15 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.005', 'timestamp': 1776888375779, 'recvWindow': 10000}
+2026-04-23 01:36:16 | ERROR    | bot.client | Binance API error -1022: Signature for this request is not valid.
+2026-04-23 01:42:41 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.0005 price=MARKET stop=N/A
+2026-04-23 01:42:41 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.0005', 'timestamp': 1776888761111, 'recvWindow': 10000}
+2026-04-23 01:42:41 | ERROR    | bot.client | Binance API error -1022: Signature for this request is not valid.
+2026-04-23 01:42:46 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.0005 price=MARKET stop=N/A
+2026-04-23 01:42:46 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.0005', 'timestamp': 1776888766598, 'recvWindow': 10000}
+2026-04-23 01:42:47 | ERROR    | bot.client | Binance API error -1022: Signature for this request is not valid.
+2026-04-23 01:46:02 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.01 price=MARKET stop=N/A
+2026-04-23 01:46:02 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1776888962699, 'recvWindow': 10000}
+2026-04-23 01:46:03 | ERROR    | bot.client | Binance API error -1022: Signature for this request is not valid.
+2026-04-23 01:47:32 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.01 price=MARKET stop=N/A
+2026-04-23 01:47:32 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1776889052914, 'recvWindow': 10000}
+2026-04-23 01:47:33 | ERROR    | bot.client | Binance API error -2019: Margin is insufficient.
+2026-04-23 01:47:48 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.0006 price=MARKET stop=N/A
+2026-04-23 01:47:48 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.0006', 'timestamp': 1776889068477, 'recvWindow': 10000}
+2026-04-23 01:47:48 | ERROR    | bot.client | Binance API error -4164: Order's notional must be no smaller than 50 (unless you choose reduce only).
+2026-04-23 01:48:04 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.005 price=MARKET stop=N/A
+2026-04-23 01:48:04 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.005', 'timestamp': 1776889084848, 'recvWindow': 10000}
+2026-04-23 01:48:05 | ERROR    | bot.client | Binance API error -2019: Margin is insufficient.
+2026-04-23 01:48:18 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.001 price=MARKET stop=N/A
+2026-04-23 01:48:18 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1776889098045, 'recvWindow': 10000}
+2026-04-23 01:48:18 | ERROR    | bot.client | Binance API error -2019: Margin is insufficient.
+2026-04-23 01:48:30 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.0001 price=MARKET stop=N/A
+2026-04-23 01:48:30 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.0001', 'timestamp': 1776889110804, 'recvWindow': 10000}
+2026-04-23 01:48:31 | ERROR    | bot.client | Binance API error -4164: Order's notional must be no smaller than 50 (unless you choose reduce only).
+2026-04-23 01:48:48 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.0001 price=MARKET stop=N/A
+2026-04-23 01:48:48 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.0001', 'timestamp': 1776889128023, 'recvWindow': 10000}
+2026-04-23 01:48:48 | ERROR    | bot.client | Binance API error -4164: Order's notional must be no smaller than 50 (unless you choose reduce only).
+2026-04-23 01:48:51 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.0001 price=MARKET stop=N/A
+2026-04-23 01:48:51 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.0001', 'timestamp': 1776889131695, 'recvWindow': 10000}
+2026-04-23 01:48:52 | ERROR    | bot.client | Binance API error -4164: Order's notional must be no smaller than 50 (unless you choose reduce only).
+2026-04-23 01:48:54 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.0001 price=MARKET stop=N/A
+2026-04-23 01:48:54 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.0001', 'timestamp': 1776889134419, 'recvWindow': 10000}
+2026-04-23 01:48:54 | ERROR    | bot.client | Binance API error -4164: Order's notional must be no smaller than 50 (unless you choose reduce only).
+2026-04-23 01:49:04 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.001 price=MARKET stop=N/A
+2026-04-23 01:49:04 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1776889144782, 'recvWindow': 10000}
+2026-04-23 01:49:05 | ERROR    | bot.client | Binance API error -2019: Margin is insufficient.
+2026-04-23 01:49:15 | INFO     | bot.client | Placing SELL STOP order | symbol=BTCUSDT qty=0.001 price=60000.0 stop=59000.0
+2026-04-23 01:49:15 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': '0.001', 'price': '60000', 'stopPrice': '59000', 'timeInForce': 'GTC', 'timestamp': 1776889155651, 'recvWindow': 10000}
+2026-04-23 01:49:16 | ERROR    | bot.client | Binance API error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-23 01:50:54 | INFO     | cli | Bot started | symbol=BTCUSDT side=BUY type=MARKET qty=0.005 price=None stop=None
+2026-04-23 01:50:54 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 01:50:55 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.005 price=MARKET stop=N/A
+2026-04-23 01:50:55 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.005', 'timestamp': 1776889255080, 'recvWindow': 10000}
+2026-04-23 01:50:55 | ERROR    | bot.client | Binance API error -2019: Margin is insufficient.
+2026-04-23 01:50:55 | ERROR    | bot.orders | Order placement failed: Binance API error -2019: Margin is insufficient.
+2026-04-23 01:50:55 | INFO     | cli | Bot started | symbol=BTCUSDT side=SELL type=MARKET qty=0.005 price=None stop=None
+2026-04-23 01:50:55 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 01:50:56 | INFO     | bot.client | Placing SELL MARKET order | symbol=BTCUSDT qty=0.005 price=MARKET stop=N/A
+2026-04-23 01:50:56 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': '0.005', 'timestamp': 1776889256096, 'recvWindow': 10000}
+2026-04-23 01:50:56 | DEBUG    | bot.client | Order response: {'orderId': 13062721129, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'pdnJMAfcx2Kvq52NeZnPIE', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0050', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776889256010}
+2026-04-23 01:50:56 | INFO     | bot.orders | Order SUCCESS | orderId=13062721129 status=NEW executedQty=0.0000
+2026-04-23 01:50:56 | INFO     | cli | Bot started | symbol=BTCUSDT side=BUY type=LIMIT qty=0.005 price=45000.0 stop=None
+2026-04-23 01:50:56 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 01:50:57 | INFO     | bot.client | Placing BUY LIMIT order | symbol=BTCUSDT qty=0.005 price=45000.0 stop=N/A
+2026-04-23 01:50:57 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': '0.005', 'price': '45000', 'timeInForce': 'GTC', 'timestamp': 1776889257182, 'recvWindow': 10000}
+2026-04-23 01:50:57 | ERROR    | bot.client | Binance API error -2019: Margin is insufficient.
+2026-04-23 01:50:57 | ERROR    | bot.orders | Order placement failed: Binance API error -2019: Margin is insufficient.
+2026-04-23 01:50:57 | INFO     | cli | Bot started | symbol=BTCUSDT side=SELL type=LIMIT qty=0.005 price=100000.0 stop=None
+2026-04-23 01:50:57 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 01:50:58 | INFO     | bot.client | Placing SELL LIMIT order | symbol=BTCUSDT qty=0.005 price=100000.0 stop=N/A
+2026-04-23 01:50:58 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.005', 'price': '100000', 'timeInForce': 'GTC', 'timestamp': 1776889258216, 'recvWindow': 10000}
+2026-04-23 01:50:58 | DEBUG    | bot.client | Order response: {'orderId': 13062721230, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'qvxhMuLE1yX5TqU7Rpx5Uw', 'price': '100000.00', 'avgPrice': '0.00', 'origQty': '0.0050', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776889258124}
+2026-04-23 01:50:58 | INFO     | bot.orders | Order SUCCESS | orderId=13062721230 status=NEW executedQty=0.0000
+2026-04-23 01:50:58 | INFO     | cli | Bot started | symbol=BTCUSDT side=BUY type=STOP qty=0.005 price=46000.0 stop=45500.0
+2026-04-23 01:50:58 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 01:50:59 | INFO     | bot.client | Placing BUY STOP order | symbol=BTCUSDT qty=0.005 price=46000.0 stop=45500.0
+2026-04-23 01:50:59 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'STOP', 'quantity': '0.005', 'price': '46000', 'stopPrice': '45500', 'timeInForce': 'GTC', 'timestamp': 1776889259219, 'recvWindow': 10000}
+2026-04-23 01:50:59 | ERROR    | bot.client | Binance API error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-23 01:50:59 | ERROR    | bot.orders | Order placement failed: Binance API error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-23 01:50:59 | INFO     | cli | Bot started | symbol=BTCUSDT side=SELL type=STOP qty=0.005 price=90000.0 stop=95000.0
+2026-04-23 01:50:59 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 01:51:00 | INFO     | bot.client | Placing SELL STOP order | symbol=BTCUSDT qty=0.005 price=90000.0 stop=95000.0
+2026-04-23 01:51:00 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': '0.005', 'price': '90000', 'stopPrice': '95000', 'timeInForce': 'GTC', 'timestamp': 1776889260331, 'recvWindow': 10000}
+2026-04-23 01:51:00 | ERROR    | bot.client | Binance API error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-23 01:51:00 | ERROR    | bot.orders | Order placement failed: Binance API error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-23 11:36:07 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.012 price=MARKET stop=N/A
+2026-04-23 11:36:07 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.012', 'timestamp': 1776924367872, 'recvWindow': 10000}
+2026-04-23 11:36:08 | ERROR    | bot.client | Binance API error -1022: Signature for this request is not valid.
+2026-04-23 11:37:13 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.012 price=MARKET stop=N/A
+2026-04-23 11:37:13 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.012', 'timestamp': 1776924433177, 'recvWindow': 10000}
+2026-04-23 11:37:23 | ERROR    | bot.client | Binance API error -1022: Signature for this request is not valid.
+2026-04-23 11:39:49 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.012 price=MARKET stop=N/A
+2026-04-23 11:39:49 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.012', 'timestamp': 1776924589101, 'recvWindow': 10000}
+2026-04-23 11:39:49 | ERROR    | bot.client | Binance API error -1022: Signature for this request is not valid.
+2026-04-23 11:40:05 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.005 price=MARKET stop=N/A
+2026-04-23 11:40:05 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.005', 'timestamp': 1776924605468, 'recvWindow': 10000}
+2026-04-23 11:40:05 | ERROR    | bot.client | Binance API error -1022: Signature for this request is not valid.
+2026-04-23 11:44:49 | DEBUG    | bot.client | BinanceFuturesClient created | key_len=64 secret_len=55 key_prefix=p6JT20...
+2026-04-23 11:44:49 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.05 price=MARKET stop=N/A
+2026-04-23 11:44:50 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.05', 'timestamp': 1776924889295, 'recvWindow': 10000}
+2026-04-23 11:44:50 | ERROR    | bot.client | Binance API error -1022: Signature for this request is not valid.
+2026-04-23 11:49:44 | DEBUG    | bot.client | BinanceFuturesClient created | key_len=64 secret_len=64 key_prefix=FPN7I9...
+2026-04-23 11:49:44 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.05 price=MARKET stop=N/A
+2026-04-23 11:49:44 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.05', 'timestamp': 1776925184248, 'recvWindow': 10000}
+2026-04-23 11:49:45 | ERROR    | bot.client | Binance API error -2019: Margin is insufficient.
+2026-04-23 11:50:02 | DEBUG    | bot.client | BinanceFuturesClient created | key_len=64 secret_len=64 key_prefix=FPN7I9...
+2026-04-23 11:50:02 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.01 price=MARKET stop=N/A
+2026-04-23 11:50:03 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1776925202709, 'recvWindow': 10000}
+2026-04-23 11:50:03 | ERROR    | bot.client | Binance API error -2019: Margin is insufficient.
+2026-04-23 11:50:12 | DEBUG    | bot.client | BinanceFuturesClient created | key_len=64 secret_len=64 key_prefix=FPN7I9...
+2026-04-23 11:50:12 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.005 price=MARKET stop=N/A
+2026-04-23 11:50:13 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.005', 'timestamp': 1776925212520, 'recvWindow': 10000}
+2026-04-23 11:50:13 | ERROR    | bot.client | Binance API error -2019: Margin is insufficient.
+2026-04-23 11:50:38 | DEBUG    | bot.client | BinanceFuturesClient created | key_len=64 secret_len=64 key_prefix=FPN7I9...
+2026-04-23 11:50:38 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.001 price=MARKET stop=N/A
+2026-04-23 11:50:38 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1776925238214, 'recvWindow': 10000}
+2026-04-23 11:50:39 | ERROR    | bot.client | Binance API error -2019: Margin is insufficient.
+2026-04-23 11:51:07 | DEBUG    | bot.client | BinanceFuturesClient created | key_len=64 secret_len=64 key_prefix=FPN7I9...
+2026-04-23 11:51:07 | INFO     | bot.client | Placing SELL STOP_MARKET order | symbol=BTCUSDT qty=0.001 price=MARKET stop=59000.0
+2026-04-23 11:51:07 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP_MARKET', 'quantity': '0.001', 'stopPrice': '59000.00', 'timestamp': 1776925267035, 'recvWindow': 10000}
+2026-04-23 11:51:07 | ERROR    | bot.client | Binance API error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-04-23 12:18:29 | DEBUG    | bot.client | BinanceFuturesClient created | key_len=64 secret_len=64 key_prefix=FPN7I9...
+2026-04-23 12:18:29 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 12:18:40 | DEBUG    | bot.client | BinanceFuturesClient created | key_len=64 secret_len=64 key_prefix=FPN7I9...
+2026-04-23 12:18:40 | DEBUG    | bot.client | GET https://demo-fapi.binance.com/fapi/v1/ping params={}
+2026-04-23 12:18:40 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.001 price=MARKET stop=N/A
+2026-04-23 12:18:40 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1776926920088, 'recvWindow': 10000}
+2026-04-23 12:18:40 | ERROR    | bot.client | Binance API error -2019: Margin is insufficient.
+2026-04-23 12:18:41 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.005 price=MARKET stop=N/A
+2026-04-23 12:18:41 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.005', 'timestamp': 1776926920878, 'recvWindow': 10000}
+2026-04-23 12:18:41 | ERROR    | bot.client | Binance API error -2019: Margin is insufficient.
+2026-04-23 12:18:42 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.01 price=MARKET stop=N/A
+2026-04-23 12:18:42 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1776926921676, 'recvWindow': 10000}
+2026-04-23 12:18:42 | ERROR    | bot.client | Binance API error -2019: Margin is insufficient.
+2026-04-23 12:18:43 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.02 price=MARKET stop=N/A
+2026-04-23 12:18:43 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.02', 'timestamp': 1776926922475, 'recvWindow': 10000}
+2026-04-23 12:18:43 | ERROR    | bot.client | Binance API error -2019: Margin is insufficient.
+2026-04-23 12:18:44 | INFO     | bot.client | Placing SELL MARKET order | symbol=BTCUSDT qty=0.001 price=MARKET stop=N/A
+2026-04-23 12:18:44 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1776926923638, 'recvWindow': 10000}
+2026-04-23 12:18:44 | DEBUG    | bot.client | Order response: {'orderId': 13064363331, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'oBOUK6PukMshmyWlle4LvT', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776926923783}
+2026-04-23 12:18:45 | INFO     | bot.client | Placing SELL MARKET order | symbol=BTCUSDT qty=0.005 price=MARKET stop=N/A
+2026-04-23 12:18:45 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': '0.005', 'timestamp': 1776926924435, 'recvWindow': 10000}
+2026-04-23 12:18:45 | DEBUG    | bot.client | Order response: {'orderId': 13064363363, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'J6PD1c1gosCs5n6ZBOzm4l', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0050', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776926924579}
+2026-04-23 12:18:45 | INFO     | bot.client | Placing SELL MARKET order | symbol=BTCUSDT qty=0.01 price=MARKET stop=N/A
+2026-04-23 12:18:45 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1776926925227, 'recvWindow': 10000}
+2026-04-23 12:18:46 | DEBUG    | bot.client | Order response: {'orderId': 13064363403, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'KntvMJ8PYHwPyS7MYhLE0J', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776926925393}
+2026-04-23 12:18:46 | INFO     | bot.client | Placing SELL MARKET order | symbol=BTCUSDT qty=0.02 price=MARKET stop=N/A
+2026-04-23 12:18:46 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': '0.02', 'timestamp': 1776926926043, 'recvWindow': 10000}
+2026-04-23 12:18:46 | DEBUG    | bot.client | Order response: {'orderId': 13064363436, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': '30AjjGg6m9Kc38RkGaTTwh', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0200', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776926926187}
+2026-04-23 12:38:27 | DEBUG    | bot.client | BinanceFuturesClient created | key_len=64 secret_len=64 key_prefix=FPN7I9...
+2026-04-23 12:38:27 | INFO     | bot.client | Placing SELL MARKET order | symbol=BTCUSDT qty=0.005 price=MARKET stop=N/A
+2026-04-23 12:38:28 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': '0.005', 'timestamp': 1776928108039, 'recvWindow': 10000}
+2026-04-23 12:38:28 | DEBUG    | bot.client | Order response: {'orderId': 13064419963, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'nAWoiWUUyse21nvMjlB0tu', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0050', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776928108196}
+2026-04-23 12:39:55 | DEBUG    | bot.client | BinanceFuturesClient created | key_len=64 secret_len=64 key_prefix=FPN7I9...
+2026-04-23 12:39:55 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.01 price=MARKET stop=N/A
+2026-04-23 12:39:56 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1776928195288, 'recvWindow': 10000}
+2026-04-23 12:39:56 | ERROR    | bot.client | Binance API error -2019: Margin is insufficient.
+2026-04-23 12:40:02 | DEBUG    | bot.client | BinanceFuturesClient created | key_len=64 secret_len=64 key_prefix=FPN7I9...
+2026-04-23 12:40:02 | INFO     | bot.client | Placing BUY MARKET order | symbol=BTCUSDT qty=0.01 price=MARKET stop=N/A
+2026-04-23 12:40:03 | DEBUG    | bot.client | POST https://demo-fapi.binance.com/fapi/v1/order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'timestamp': 1776928202578, 'recvWindow': 10000}
+2026-04-23 12:40:03 | ERROR    | bot.client | Binance API error -2019: Margin is insufficient.

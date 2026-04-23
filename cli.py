@@ -82,8 +82,8 @@ def parse_args() -> argparse.Namespace:
         "--type",
         dest="order_type",
         required=True,
-        choices=["MARKET", "LIMIT", "STOP_LIMIT"],
-        help="Order type: MARKET, LIMIT, or STOP_LIMIT",
+        choices=["MARKET", "LIMIT", "STOP_MARKET", "STOP_LIMIT"],
+        help="Order type: MARKET, LIMIT, STOP_MARKET (recommended), or STOP_LIMIT",
     )
     parser.add_argument(
         "--quantity",
