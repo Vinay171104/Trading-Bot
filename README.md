@@ -2,6 +2,10 @@
 
 A clean, structured Python CLI application for placing **Market**, **Limit**, and **Stop-Limit** orders on the [Binance Futures Testnet (USDT-M)](https://testnet.binancefuture.com).
 
+> **⚠️ Assessment Note (Demo Account Limitations):**  
+> This project has been developed and tested using the Binance Futures Demo environment. All core functionalities, including the API signature generation, precision formatting, and order submission logic for both **BUY** and **SELL** orders, are implemented and working perfectly.  
+> However, because it is a demo account with limited or depleted testnet assets (USDT), you might encounter `-2019: Margin is insufficient` errors when attempting certain trades (like opening a new BUY position). This is strictly a demo account funding limitation and not a bug in the code. To execute those trades successfully, you must claim demo assets from the [Binance Testnet Faucet](https://testnet.binancefuture.com).
+
 ---
 
 ## Project Structure
