@@ -1,5 +1,7 @@
 # Binance Futures Testnet Trading Bot
 
+🚀 **Live Demo:** [https://trading-bot-xijehdlvucgyrhipwhpg29.streamlit.app/](https://trading-bot-xijehdlvucgyrhipwhpg29.streamlit.app/)
+
 A clean, structured Python CLI application for placing **Market**, **Limit**, and **Stop-Limit** orders on the [Binance Futures Testnet (USDT-M)](https://testnet.binancefuture.com).
 
 > **Assessment Note (Demo Account Limitations):**  
